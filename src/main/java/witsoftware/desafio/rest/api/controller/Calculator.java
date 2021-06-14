@@ -16,7 +16,7 @@ public class Calculator {
     private CalculateSimple calculateSimple;
 
 
-    @RequestMapping("/calculator.html")
+    @GetMapping ("/calculator.html")
     public ModelAndView getCalculatorPage(Model model){
         model.addAttribute("operationModel",operationModel);
         return new ModelAndView ("/calculator.html");
