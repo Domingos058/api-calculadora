@@ -16,10 +16,10 @@ public class Calculator {
     private CalculateSimple calculateSimple;
 
 
-    @GetMapping ("/calculator.html")
+    @GetMapping ("/calculator")
     public ModelAndView getCalculatorPage(Model model){
         model.addAttribute("operationModel",operationModel);
-        return new ModelAndView ("/calculator.html");
+        return new ModelAndView ("/calculator");
     }
 
     @RequestMapping(value="/calculator", params="add", method = RequestMethod.POST)
